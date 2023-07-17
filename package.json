@@ -1,6 +1,7 @@
 {
   "name": "Intrid test task",
   "version": "0.1",
+  "homepage": "https://inoris7.github.io/IntridTestTask",
   "type": "module",
   "description": "Тестовая работа на позицию фронтенд Intrid",
   "browserslist": [
@@ -15,7 +16,9 @@
     "build": "gulp build",
     "dev": "gulp dev",
     "start": "gulp start",
-    "webp": "gulp webp"
+    "webp": "gulp webp",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "editorconfig-cli": [
     "*.json",
@@ -60,5 +63,8 @@
   },
   "engines": {
     "node": ">=16.15.1"
+  },
+  "dependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
