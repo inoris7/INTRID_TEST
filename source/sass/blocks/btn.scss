@@ -3,16 +3,11 @@
   padding: 10px 20px;
 
   color: $color-default-white;
-
-  background-color: $color-neon-blue;
+  
   border: none;
   cursor: pointer;
 
-  transition: opacity $trans-default;
-
-  &--red {
-    background-color: $color-torch-red;
-  }
+  transition: opacity $trans-default;  
 
   &:disabled {
     opacity: 0.5;

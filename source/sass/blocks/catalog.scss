@@ -1,0 +1,59 @@
+.catalog {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 24px 60px;
+    background-color: $color-default-white;
+    z-index: 5;     
+
+    &__item {
+        margin-right: 80px;
+    }
+
+    &__item-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    &__item-list-item {
+        margin-bottom: 10px;
+    }
+
+    &__link {
+        
+        &:hover {
+            color: $harley-davidson-orange;
+            border-bottom: 1px solid $harley-davidson-orange;
+        }
+    }
+}
+
+@media (max-width: 1249.9px) {
+    .catalog {        
+        padding: 24px 40px;  
+        
+        &__item {
+            margin-right: 60px;
+        }
+    }
+}
+
+@media (max-width: 1023.9px) {
+    .catalog {        
+        padding: 24px 30px;  
+        
+        &__item {
+            margin-right: 30px;
+        }
+    }
+}
+
+@media (max-width: 767.9px) {
+    .catalog {
+        padding: 10px 0 0 10px;
+        padding-left: 10px;
+        flex-direction: column;        
+    }
+}

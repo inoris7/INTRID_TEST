@@ -1,8 +1,14 @@
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
-
+  font-family: "RF_Dewi";
+  src: url("../fonts/RFDewi-Regular.woff2") format("woff2"), url("../fonts/RFDewi-Regular.woff") format("woff");
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "RF_Dewi";
+  src: url("../fonts/RFDewi-Semibold.woff2") format("woff2"), url("../fonts/RFDewi-Semibold.woff") format("woff");
+  font-display: swap;
 }

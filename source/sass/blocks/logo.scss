@@ -1,0 +1,30 @@
+.logo {
+    &--short {
+        display: none;
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+@media (max-width: 1249.9px) {
+    .logo {
+        &--short {
+            display: block;
+        }
+
+        &--full {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 767.9px) {
+    .logo {
+        &--short {
+            width: 120px;
+            height: 20px;
+        }
+    }
+}

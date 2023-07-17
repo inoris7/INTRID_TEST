@@ -1,0 +1,154 @@
+@keyframes scalein {
+    from {
+      transform: scale(90%);
+    }
+
+    to {
+      transform: scale(110%);
+    }
+}
+
+.promo {
+    background: url("../img/promo-bg-desktop.webp") rgba(0, 0, 0, 0.33) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__container {
+        box-sizing: border-box;
+        position: relative;
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 55px 60px 71px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text-wrapper {
+        display: flex;
+        justify-content: space-between;
+        color: $color-default-white;
+    }
+
+    &__subtitle {
+
+        @extend %dewi-600;
+        font-size: 50px;
+        line-height: 54px;
+        margin: 0;
+        max-width: 610px;
+    }
+
+    &__slogan {
+        line-height: 21px;
+        max-width: 383px;
+    }
+
+    &__search-form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: $color-default-white;
+        border-radius: 4px;
+        margin-top: 46px;
+    }
+
+    &__banners {
+        list-style-type: none;
+        margin: 0;
+        margin-top: 42px;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+    }
+
+    &__banner {
+        padding: 22px 0 22px 32px;
+        max-width: 413px;
+        flex-grow: 1;
+        border-radius: 4px;
+
+        &:hover {
+            animation-duration: 1000ms;
+            animation-name: scalein;
+        }
+
+        &-link {
+            color: $color-default-white;
+        }
+
+        &--mortgage {
+            background: url("../img/check.png") $fire-brick no-repeat right 80%;
+        }
+
+        &--exchange {
+            background: url("../img/reverse.png") #3E3E3E no-repeat right 80%;
+        }
+
+        &--valuation {
+            background: url("../img/display.png") $mariner no-repeat right 80%;
+        }
+
+        &-subtitle {
+
+            @extend %dewi-600;
+            font-size: 21px;
+            margin: 0;
+            margin-bottom: 12px;
+        }
+
+        &-description {
+            margin: 0;
+            margin-bottom: 32px;
+            max-width: 219px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media (max-width: 1023.9px) {
+    .promo {
+        &__container {
+            padding: 35px 30px 51px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__text-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__banners {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__banner {
+            width: 100%;
+            max-width: unset;
+        }
+    }
+}
+
+@media (max-width: 767.9px) {
+    .promo {
+        &__container {
+            padding: 20px 20px;
+        }
+
+        &__subtitle {
+
+            @extend %dewi-600;
+            font-size: 30px;
+            line-height: 40px;
+            max-width: unset;
+        }
+
+        &__slogan {
+            max-width: unset;
+        }
+    }
+}
