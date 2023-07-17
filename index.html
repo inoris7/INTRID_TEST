@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание проекта">
+    <title>Intrid test task</title>
+    <link rel="preload" href="../fonts/RFDewi-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/RFDewi-Semibold.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="page__body">
+      <header class="main-header">
+        <div class="main-header__container">
+          <a class="main-header__logo logo" href="#">
+            <svg class="main-header__logo-full logo logo--full" width="230" height="22" fill="#DC1919">
+              <use href="./img/sprite.svg#main-logo"></use>
+            </svg>
+            <svg class="main-header__logo-short logo logo--short" width="151" height="22" fill="#DC1919">
+              <use href="./img/sprite.svg#main-logo-short"></use>
+            </svg>
+          </a>
+          <button class="main-header__mobile-button">
+            <svg width="30" height="30" fill="#000000">
+              <use href="./img/sprite.svg#burger-menu-icon"></use>
+            </svg>
+          </button>
+          <nav class="main-header__navigation main-header__navigation--closed navigation">
+            <ul class="main-header__links-list ">
+              <li class="main-header__links-item main-header__links-item--catalog">
+                <a class="main-header__nav-link main-header__nav-link--catalog"  href="#">
+                  Каталог недвижимости
+                  <svg class="main-header__nav-arrow" width="9" height="5" fill="#B7B7B7">
+                    <use href="./img/sprite.svg#chevron-down"></use>
+                  </svg>
+                </a>
+                <ul class="main-header__catalog catalog visually-hidden">
+                  <li class="catalog__item ">
+                    <ul class="catalog__item-list">
+                      <li class="catalog__item-list-item">
+                        <a class="catalog__link" href="#">Все квартиры</a>
+                      </li>
+                      <li class="catalog__item-list-item">
+                        <a class="catalog__link" href="#">Квартиры в новостройке</a>
+                      </li>
+                      <li class="catalog__item-list-item">
+                        <a class="catalog__link" href="#">Квартиры во вторичке</a>
+                      </li>
+                      <li class="catalog__item-list-item">
+                        <a class="catalog__link" href="#">Акции и скидки</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="catalog__item ">
+                    <ul class="catalog__item-list">
+                      <li class="catalog__item-list-item">
+                        <a class="catalog__link" href="#">Квартиры студии</a>
+                      </li>
+                      <li class="catalog__item-list-item">
+                        <a class="catalog__link" href="#">1-комнатные квартиры</a>
+                      </li>
+                      <li class="catalog__item-list-item">
+                        <a class="catalog__link" href="#">2-комнатные квартиры</a>
+                      </li>
+                      <li class="catalog__item-list-item">
+                        <a class="catalog__link" href="#">3-комнатные квартиры</a>
+                      </li>
+                      <li class="catalog__item-list-item">
+                        <a class="catalog__link" href="#">4-комнатные квартиры</a>
+                      </li>
+                      <li class="catalog__item-list-item">
+                        <a class="catalog__link" href="#">Квартиры в Воронеже</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="catalog__item ">
+                    <ul class="catalog__item-list">
+                      <li class="catalog__item-list-item">
+                        <a class="catalog__link" href="#">Квартиры на правом берегу</a>
+                      </li>
+                      <li class="catalog__item-list-item">
+                        <a class="catalog__link" href="#">Квартиры на левом берегу</a>
+                      </li>
+                      <li class="catalog__item-list-item">
+                        <a class="catalog__link" href="#">Квартиры в Железнодорожном р-не</a>
+                      </li>
+                      <li class="catalog__item-list-item">
+                        <a class="catalog__link" href="#">Квартиры в Советском р-не</a>
+                      </li>
+                      <li class="catalog__item-list-item">
+                        <a class="catalog__link" href="#">Квартиры в Ленинском р-не</a>
+                      </li>
+                      <li class="catalog__item-list-item">
+                        <a class="catalog__link" href="#">Квартиры в Коминтерновском р-не</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </li>
+              <li class="main-header__links-item">
+                <a class="main-header__nav-link" href="#">Ипотека</a>
+              </li>
+              <li class="main-header__links-item">
+                <a class="main-header__nav-link" href="#">О нас</a>
+              </li>
+              <li class="main-header__links-item">
+                <a class="main-header__nav-link" href="#">Карьера</a>
+              </li>
+              <li class="main-header__links-item">
+                <a class="main-header__nav-link" href="#">Отзывы</a>
+              </li>
+              <li class="main-header__links-item">
+                <a class="main-header__nav-link" href="#">Вакансии</a>
+              </li>
+              <li class="main-header__links-item">
+                <a class="main-header__nav-link" href="#">Прочее</a>
+              </li>
+            </ul>
+            <a class="main-header__offices-link" href="#">
+              <span class="main-header__offices-span-desktop">Офисы и контакты</span>
+              <span class="main-header__offices-span-mobile">Контакты</span>
+            </a>
+          </nav>
+
+        </div>
+      </header>
+
+      <main class="page__main-container">
+        <h1 class="visually-hidden">
+          Служба недвижимости Траст
+        </h1>
+        <section class="promo">
+          <div class="promo__container">
+
+            <div class="promo__text-wrapper">
+              <h2 class="promo__subtitle">
+                Сотрудничество начинается с доверия
+              </h2>
+              <p class="promo__slogan">
+                «Траст» входит в состав Российской Гильдии Риэлторов.
+                Стандарты качества услуг компании сертифицированы, деятельность застрахована.
+              </p>
+            </div>
+
+            <form class="promo__search-form search-form" action="submit">
+              <ul class="search-form__list">
+                <li class="search-form__item search-form__item--apart">
+                  <span class="search-form__item-name">Квартира в новостройке</span>
+                  <ul class="search-form__fields search-form__fields--apart search-form__fields--closed">
+                    <li class="search-form__field search-form__field--buttons">
+                      <button class="search-form__field-button" type="button">
+                        Жилая
+                      </button>
+                      <button class="search-form__field-button" type="button">
+                        Коммерческая
+                      </button>
+                    </li>
+
+                    <li class="search-form__field">
+                      <label class="search-form__input">
+                        <input class="visually-hidden" type="checkbox" name="new-building"  value="new-building">
+                        <span class="search-form__input-icon"></span>
+                        <span class="search-form__input-name">Квартира в новостройке</span>
+                      </label>
+                      <label class="search-form__input">
+                        <input class="visually-hidden" type="checkbox" name="second-hand" value="second-hand">
+                        <span class="search-form__input-icon"></span>
+                        <span class="search-form__input-name">Квартира во вторичке</span>
+                      </label>
+                    </li>
+
+                    <li class="search-form__field">
+                      <label class="search-form__input">
+                        <input class="visually-hidden" type="checkbox" name="room" value="room">
+                        <span class="search-form__input-icon"></span>
+                        <span class="search-form__input-name">Комната</span>
+                      </label>
+                      <label class="search-form__input">
+                        <input class="visually-hidden" type="checkbox" name="share" value="share">
+                        <span class="search-form__input-icon"></span>
+                        <span class="search-form__input-name">Доля</span>
+                      </label>
+                    </li>
+
+                    <li class="search-form__field">
+                      <label class="search-form__input">
+                        <input class="visually-hidden" type="checkbox" name="household" value="household">
+                        <span class="search-form__input-icon"></span>
+                        <span class="search-form__input-name">Дом или дача</span>
+                      </label>
+                      <label class="search-form__input">
+                        <input class="visually-hidden" type="checkbox" name="household-share" value="household-share">
+                        <span class="search-form__input-icon"></span>
+                        <span class="search-form__input-name">Часть дома</span>
+                      </label>
+                      <label class="search-form__input">
+                        <input class="visually-hidden" type="checkbox" name="townhouse" value="townhouse">
+                        <span class="search-form__input-icon"></span>
+                        <span class="search-form__input-name">Таунхаус</span>
+                      </label>
+                      <label class="search-form__input">
+                        <input class="visually-hidden" type="checkbox" name="site" value="site">
+                        <span class="search-form__input-icon"></span>
+                        <span class="search-form__input-name">Участок</span>
+                      </label>
+                    </li>
+
+                  </ul>
+                </li>
+
+                <li class="search-form__item search-form__item--rooms">
+                  <span class="search-form__item-name">Комнатность</span>
+                  <ul class="search-form__fields search-form__fields--rooms search-form__fields--closed">
+                    <li class="search-form__field search-form__field--buttons">
+                      <button class="search-form__field-button search-form__field-button--rooms" type="button">
+                        1
+                      </button>
+                      <button class="search-form__field-button search-form__field-button--rooms" type="button">
+                        2
+                      </button>
+                      <button class="search-form__field-button search-form__field-button--rooms" type="button">
+                        3
+                      </button>
+                      <button class="search-form__field-button search-form__field-button--rooms" type="button">
+                        4
+                      </button>
+                      <button class="search-form__field-button search-form__field-button--rooms" type="button">
+                        5+
+                      </button>
+                    </li>
+
+                    <li class="search-form__field">
+                      <label class="search-form__input">
+                        <input class="visually-hidden" type="checkbox" name="studio"  value="studio">
+                        <span class="search-form__input-icon"></span>
+                        <span class="search-form__input-name">Студия</span>
+                      </label>
+                      <label class="search-form__input">
+                        <input class="visually-hidden" type="checkbox" name="free-planing" value="free-planing">
+                        <span class="search-form__input-icon"></span>
+                        <span class="search-form__input-name">Свободная планировка</span>
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="search-form__item search-form__item--price">
+                  <span class="search-form__item-name">2,3 — 4,7 млн</span>
+                  <ul class="search-form__fields search-form__fields--price search-form__fields--closed">
+                    <li class="search-form__field search-form__field--price">
+                      <label class="search-form__field-label search-form__field-label--price">
+
+                        <input class="search-form__field-input search-form__field-input--price" type="text" name="" placeholder="от">
+                      </label>
+                    </li>
+                    <li class="search-form__field search-form__field--price">
+                      <label class="search-form__field-label search-form__field-label--price">
+
+                        <input class="search-form__field-input search-form__field-input--price type="text" name="" placeholder="до">
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+                <li class="search-form__item search-form__item--district">
+                  <span class="search-form__item-name">Район</span>
+                  <ul class="search-form__fields search-form__fields--district search-form__fields--closed">
+                    <li class="search-form__field search-form__field--district">
+                      <fieldset>
+                        <legend>Адрес</legend>
+                        <label>
+                          <input class="visually-hidden" type="checkbox" name="">
+                          <span class="search-form__input-name">
+                            Железнодорожников, 7, Картымский
+                          </span>
+                        </label>
+                        <label>
+                          <input class="visually-hidden" type="checkbox" name="">
+                          <span class="search-form__input-name">
+                           Железнодорожная, 21, Винзили
+                          </span>
+                        </label>
+                        <label>
+                          <input class="visually-hidden" type="checkbox" name="">
+                          <span class="search-form__input-name">
+                            Железнодорожников, 3, Картымский
+                          </span>
+                        </label>
+                        <label>
+                          <input class="visually-hidden" type="checkbox" name="">
+                          <span class="search-form__input-name">
+                            Железнодорожников, 4, Картымский
+                          </span>
+                        </label>
+                        <label>
+                          <input class="visually-hidden" type="checkbox" name="">
+                          <span class="search-form__input-name">
+                            Железнодорожников, 6, Картымский
+                          </span>
+                        </label>
+                      </fieldset>
+                    </li>
+                    <li class="search-form__field search-form__field--district">
+                      <fieldset>
+                        <legend>Район</legend>
+                        <label>
+                          <input class="visually-hidden" type="checkbox" name="">
+                          <span class="search-form__input-name">
+                            Железнодорожный
+                          </span>
+                        </label>
+                      </fieldset>
+                    </li>
+                    <li class="search-form__field search-form__field--district">
+                      <fieldset>
+                        <legend>Жилой комплекс</legend>
+                        <label>
+                          <input class="visually-hidden" type="checkbox" name="">
+                          <span class="search-form__input-name">
+                            Жужа
+                          </span>
+                        </label>
+                      </fieldset>
+                    </li>
+
+                  </ul>
+                </li>
+              </ul>
+              <button class="search-form__search-button">Поиск</button>
+            </form>
+
+            <ul class="promo__banners">
+              <li class="promo__banner promo__banner--mortgage">
+                <a class="promo__banner-link" href="#">
+                  <h3 class="promo__banner-subtitle">
+                    Ипотека онлайн
+                  </h3>
+                  <p class="promo__banner-description">
+                    Поможем получить одобрение банков, чтобы вы могли
+                  </p>
+                  <svg class="promo__arrow" width="13" height="12" fill="#ffffff">
+                    <use href="./img/sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="promo__banner promo__banner--exchange">
+                <a class="promo__banner-link" href="#">
+                  <h3 class="promo__banner-subtitle">
+                    Поменяем на новую
+                  </h3>
+                  <p class="promo__banner-description">
+                    Поможем получить одобрение банков, чтобы вы могли
+                  </p>
+                  <svg class="promo__arrow" width="13" height="12" fill="#ffffff">
+                    <use href="./img/sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="promo__banner promo__banner--valuation">
+                <a class="promo__banner-link" href="#">
+                  <h3 class="promo__banner-subtitle">
+                    Оценка стоимости
+                  </h3>
+                  <p class="promo__banner-description">
+                    Поможем получить одобрение банков, чтобы вы могли
+                  </p>
+                  <svg class="promo__arrow" width="13" height="12" fill="#ffffff">
+                    <use href="./img/sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </section>
+        <!-- <section class="exclusive">
+          <div class="exclusive__container">
+            <div class="exclusive__wrapper">
+              <h2 class="exclusive__subtitle">
+                Эксклюзивные варианты
+              </h2>
+              <p class="exclusive__description">
+                В данном случае я выступаю в роли Морфеуса
+                — лишь указываю на дверь,
+                войти придётся самостоятельно.
+              </p>
+              <button class="exclusive__all">
+                Все эксклюзивы
+              </button>
+            </div>
+
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  Slide 1
+                </div>
+                <div class="swiper-slide">
+                  Slide 2
+                </div>
+              </div>
+              <div class="exclusive__swiper-scrollbar swiper-scrollbar"></div>
+            </div>
+          </div>
+        </section> -->
+      </main>
+
+      <footer class="main-footer">
+        <div class="main-footer__container">
+          <a class="main-footer__logo logo" href="#">
+            <svg class="main-footer__logo-full logo logo--full" width="230" height="22" fill="#B3B3B3">
+              <use href="./img/sprite.svg#main-logo"></use>
+            </svg>
+            <svg class="main-footer__logo-short logo logo--short" width="151" height="22" fill="#B3B3B3">
+              <use href="./img/sprite.svg#main-logo-short"></use>
+            </svg>
+          </a>
+
+          <nav class="main-footer__navigation">
+            <ul class="main-footer__links-list ">
+              <li class="main-footer__links-item main-footer__links-item--catalog">
+                <a class="main-footer__nav-link main-footer__nav-link--catalog"  href="#">
+                  Каталог недвижимости
+                </a>
+
+              </li>
+              <li class="main-footer__links-item">
+                <a class="main-footer__nav-link" href="#">Ипотека</a>
+              </li>
+              <li class="main-footer__links-item">
+                <a class="main-footer__nav-link" href="#">О нас</a>
+              </li>
+              <li class="main-footer__links-item">
+                <a class="main-footer__nav-link" href="#">Карьера</a>
+              </li>
+              <li class="main-footer__links-item">
+                <a class="main-footer__nav-link" href="#">Отзывы</a>
+              </li>
+              <li class="main-footer__links-item">
+                <a class="main-footer__nav-link" href="#">Вакансии</a>
+              </li>
+              <li class="main-footer__links-item">
+                <a class="main-footer__nav-link" href="#">Прочее</a>
+              </li>
+            </ul>
+            <a class="main-footer__offices-link" href="#">
+              <span class="main-footer__offices-span-desktop">Офисы и контакты</span>
+              <span class="main-footer__offices-span-mobile">Контакты</span>
+            </a>
+          </nav>
+
+        </div>
+        <div class="main-footer__copiright-container">
+          <div class="main-footer__copiright-wrapper">
+            <span class="main-footer__copiright">©2000-2022 Компания «Траст». Все права защищены. При использовании материалов гиперссылка обязательна.</span>
+            <a class="main-footer__vk-link" href="#">
+              <svg class="main-footer__vk-logo" width="26" height="26" fill="#B3B3B3">
+                <use href="./img/sprite.svg#vk-icon"></use>
+              </svg>
+            </a>
+          </div>
+          <span class="main-footer"></span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
