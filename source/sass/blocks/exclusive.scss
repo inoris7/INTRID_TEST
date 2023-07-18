@@ -1,0 +1,219 @@
+.exclusive {
+
+  &__container {
+    box-sizing: border-box;
+    position: relative;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 39px 60px 31px;
+  }
+
+  &__subtitle {
+    @extend %dewi-600;
+    font-size: 35px;
+    line-height: 39px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  &__description {
+    margin: 0;
+    line-height: 21px;
+    color: #838383;
+    max-width: 518px;
+  }
+
+  &__all {
+    cursor: pointer;
+    border: 1px solid $harley-davidson-orange;
+    border-radius: 4px;
+    color: $harley-davidson-orange;
+    background-color: $color-default-white;
+    padding: 17.5px 78px;
+    max-width: 272px;
+    justify-self: end;
+
+    &:hover {
+      color: $color-default-white;
+      background-color: $harley-davidson-orange;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, );
+    grid-template-rows:  1fr 1fr;
+    grid-auto-flow: column;
+    column-gap: 1fr;
+    margin-bottom: 40px;
+  }
+
+  &__slide {
+
+    &-item {
+      position: relative;
+      width: 99%;
+      height: 686px;
+      background-image: url("/img/exclusive-slide.webp");
+      background-size: cover;
+      background-position: center;
+      border-radius: 4px;
+    }
+
+    &-promo {
+      @extend %dewi-600;
+      font-size: 13px;
+      line-height: 19.5px;
+      color: #EFEFEF;
+      display: block;
+      width: fit-content;
+      padding: 10px 20px;
+      border-radius: 4px;
+      background-color: rgba(30, 30, 30, 0.7);
+      position: absolute;
+      top: 35px;
+      left: 45px;
+    }
+
+    &-text-wrapper {
+      display: flex;
+      flex-direction: column;
+      color: $color-default-white;
+      @extend %dewi-600;
+      position: absolute;
+      bottom: 49px;
+      left: 39px;
+    }
+
+    &-price {
+      font-size: 35px;
+      line-height: 39px;
+      margin-bottom: 11px
+    }
+
+    &-description {
+      @extend %dewi-400;
+      font-size: 21px;
+      line-height: 23px;
+      margin-bottom: 15px
+    }
+
+    &-address {
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    &-buttons {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      position: absolute;
+      bottom: 50px;
+      right: 62px;
+    }
+
+    &-like-button {
+      border: 1px solid #FFFFFF;
+      border-radius: 4px;
+      padding: 20px;
+      background-color: transparent;
+      margin-right: 13px;
+
+      &:hover {
+        border: 1px solid $harley-davidson-orange;
+        background-color: $harley-davidson-orange;
+      }
+    }
+
+    &-phone-button {
+      border: 1px solid $harley-davidson-orange;
+      border-radius: 4px;
+      color: #F5F5F5;
+      background-color: $harley-davidson-orange;
+      height: 100%;
+      padding: 0 90px;
+
+      &:hover {
+        background-color: transparent;
+        color: $harley-davidson-orange;
+      }
+    }
+  }
+}
+
+@media (max-width: 1189.9px) {
+  .exclusive {
+
+    &__slide {
+
+      &-item {
+        height: 586px;
+      }
+
+      &-promo {
+        top: 20px;
+        left: 25px;
+      }
+
+      &-text-wrapper {
+        bottom: 40%;
+        left: 25px;
+      }
+
+      &-buttons {
+        bottom: 20px;
+        left: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023.9px) {
+  .exclusive {
+
+    &__container {
+      padding: 30px;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    &__description {
+      margin-bottom: 20px;
+      max-width: unset;
+    }
+
+    &__slide {
+
+      &-item {
+        height: 486px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.9px) {
+  .exclusive {
+
+    &__container {
+      padding: 20px;
+    }
+
+    &__slide {
+
+      &-item {
+        height: 386px;
+      }
+
+      &-phone-button {
+        padding: 0 65px;
+      }
+    }
+  }
+
+}

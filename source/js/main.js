@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import './modules/catalog-toggle';
 import './modules/mobile-menu-toggle';
 import './modules/exclusive-menu-open';
+import './modules/slider';
 
 
 // ---------------------------------

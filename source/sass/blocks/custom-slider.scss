@@ -1,0 +1,42 @@
+.swiper-horizontal>.swiper-scrollbar {
+  position: static;
+  margin-top: 30px;
+  width: 100%;
+  height: 6px;
+  border-radius: 1px;
+}
+
+.swiper-scrollbar-drag {
+  background-color: #D92929;
+  border-radius: 1px ;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  width: 38px;
+  height: 38px;
+  background-color: #BEBEBE;
+  background-image: url("../img/arrow-right.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  border-radius: 4px;
+  margin: 0;
+  position: absolute;
+  top: calc(50% + 48px);
+  right: 0;
+  overflow: visible;
+
+  &:hover {
+    background-color: $harley-davidson-orange;
+  }
+
+
+  &::after {
+    content: none;
+  }
+}
+
+.swiper-button-prev {
+  left: 0;
+  transform: rotate(180deg);
+}
