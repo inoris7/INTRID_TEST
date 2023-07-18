@@ -3104,7 +3104,7 @@ button,
   position: relative;
   width: 99%;
   height: 686px;
-  background-image: url("/img/exclusive-slide.webp");
+  background-image: url("../img/exclusive-slide.webp");
   background-size: cover;
   background-position: center;
   border-radius: 4px;
@@ -3276,9 +3276,7 @@ button,
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-}
-
-/* @mixin hover-focus {
+} /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
         @content;
